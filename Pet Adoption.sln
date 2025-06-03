@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB65DA46-6660-432A-B1C8-61C9B4863C03}"
+	ProjectSection(SolutionItems) = preProject
+		available-pets.html = available-pets.html
+		contact.html = contact.html
+		donation.html = donation.html
+		index.html = index.html
+		login.html = login.html
+		post-ad.html = post-ad.html
+		shelters.html = shelters.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{7D018F9B-3D25-49E2-A04C-01487F9F7D82}"
+	ProjectSection(SolutionItems) = preProject
+		css\contact.css = css\contact.css
+		css\donation.css = css\donation.css
+		css\post-ad.css = css\post-ad.css
+		css\shelters.css = css\shelters.css
+		css\styles.css = css\styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "java", "java", "{4E3193C7-ACA0-44C6-B912-9ABFA5D051D9}"
+	ProjectSection(SolutionItems) = preProject
+		auth.js = auth.js
+		java\cont.js = java\cont.js
+		java\don.js = java\don.js
+		java\homepage.js = java\homepage.js
+		java\login.js = java\login.js
+		java\pets.js = java\pets.js
+		java\post-ad.js = java\post-ad.js
+		java\shelters.js = java\shelters.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D018F9B-3D25-49E2-A04C-01487F9F7D82} = {DB65DA46-6660-432A-B1C8-61C9B4863C03}
+		{4E3193C7-ACA0-44C6-B912-9ABFA5D051D9} = {DB65DA46-6660-432A-B1C8-61C9B4863C03}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7C5A36F-7DB0-4A05-A2BE-3723FCA130DC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Pets | Pet Adoption Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pet Adoption</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="available-pets.html">Available Pets</a>
+                    </li>
+
+                    <!-- Admin-only link -->
+                    <li class="nav-item">
+                        <a class="nav-link admin-only" href="post-ad.html">Post an Ad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shelters.html">Shelters & Rescues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donation.html">Donation</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-auto">
+                    <span class="text-light me-3" id="userGreeting"></span>
+                    <button class="btn btn-outline-light btn-sm" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Available Pets</h2>
+            <button id="clearAdsBtn" class="btn btn-danger admin-only">Clear All Ads</button>
+        </div>
+        <div class="row" id="petsContainer">
+            <!-- Default pets -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="pic/dog.jpg" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Buddy</h5>
+                        <p class="card-text">A friendly and playful dog looking for a home.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="pic/cats.jpg" class="card-img-top" alt="Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Whiskers</h5>
+                        <p class="card-text">A loving and calm cat searching for a companion.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="pic/rabbit.jpg" class="card-img-top" alt="Rabbit">
+                    <div class="card-body">
+                        <h5 class="card-title">Fluffy</h5>
+                        <p class="card-text">An adorable rabbit ready for a new home.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="adoptModal" tabindex="-1" aria-labelledby="adoptModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adoptModalLabel">Adopt Your Pet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="adoptForm">
+                        <div class="mb-3">
+                            <label for="adopterName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="adopterName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="adopterEmail" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="adopterEmail" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="text-white">&copy; 2025 Pet Adoption Website | <a href="contact.html" class="text-white">Contact Us</a></p>
+    </footer>
+    <script src="java/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="java/pets.js"></script>
+</body>
+</html>

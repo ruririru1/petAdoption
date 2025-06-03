@@ -1,0 +1,39 @@
+﻿.donation-page h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.donation-options {
+    background-color: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+    .donation-options h2 {
+        color: #333;
+    }
+
+    .donation-options form input,
+    .donation-options form textarea {
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+
+        .donation-options form input:focus,
+        .donation-options form textarea:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+.btn-success {
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

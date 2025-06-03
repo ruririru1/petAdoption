@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your perfect pet through our pet adoption platform. Browse available pets and connect with shelters today!">
+    <title>Home | Pet Adoption Website</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pet Adoption</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="available-pets.html">Available Pets</a>
+                    </li>
+
+                    <!-- Admin-only link -->
+                    <li class="nav-item">
+                        <a class="nav-link admin-only" href="post-ad.html">Post an Ad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shelters.html">Shelters & Rescues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donation.html">Donation</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-auto">
+                    <span class="text-light me-3" id="userGreeting"></span>
+                    <button class="btn btn-outline-light btn-sm" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section class="text-center">
+            <h1>Welcome to Pet Adoption Center</h1>
+            <p class="desc">Your journey to finding a loving pet starts here.</p>
+            <img src="pic/pets.jpg" alt="Happy dog and cat together" class="img-fluid">
+        </section>
+    </main>
+
+    <!-- Flexbox Section -->
+    <div class="two-sections d-flex flex-wrap justify-content-center">
+        <section class="section-left p-3">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Search for Pets:</strong> Use our filters to find pets that match your preferences.</li>
+                <li><strong>Contact the Owner:</strong> Reach out to shelters or pet owners for more details.</li>
+                <li><strong>Complete Adoption:</strong> Follow the adoption process and welcome your new friend home!</li>
+            </ol>
+        </section>
+
+        <section class="section-right p-3">
+            <h2>Why Adopt?</h2>
+            <ul>
+                <li>Save a life by giving a pet a loving home.</li>
+                <li>Reduce pet overpopulation by adopting instead of buying.</li>
+                <li>Find a companion that matches your lifestyle.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Bootstrap Grid Section -->
+    <section class="container mt-5">
+        <h2 class="text-center">Featured Pets</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pic/dog.jpg" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Buddy</h5>
+                        <p class="card-text">A friendly and playful dog looking for a home.</p>
+                        <button onclick="window.location.href='available-pets.html';" class="btn btn-primary">Adopt Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pic/cats.jpg" class="card-img-top" alt="Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Whiskers</h5>
+                        <p class="card-text">A loving and calm cat searching for a companion.</p>
+                        <button onclick="window.location.href='available-pets.html';" class="btn btn-primary">Adopt Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pic/rabbit.jpg" class="card-img-top" alt="Rabbit">
+                    <div class="card-body">
+                        <h5 class="card-title">Fluffy</h5>
+                        <p class="card-text">An adorable rabbit ready for a new home.</p>
+                        <button onclick="window.location.href='available-pets.html';" class="btn btn-primary">Adopt Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="random-tip" class="container mt-4">
+        <h3>Adoption Tip of the Day</h3>
+        <p id="tip-text">Loading...</p>
+        <button id="new-tip-btn" class="btn btn-primary">Get Another Tip</button>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="text-white">&copy; 2025 Pet Adoption Website | <a href="contact.html" class="text-white">Contact Us</a></p>
+        <button onclick="rateSite()" class="btn btn-success mt-3">Rate this site</button>
+    </footer>
+    <script src="java/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="java/homepage.js"></script>
+
+</body>
+</html>
+

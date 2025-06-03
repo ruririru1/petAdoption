@@ -1,0 +1,53 @@
+﻿.shelters h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #ff7043;
+    margin-bottom: 20px;
+}
+
+.shelters-list .card {
+    border-radius: 10px;
+}
+
+    .shelters-list .card img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+.shelters-list .card-body {
+    background-color: #f8f9fa;
+    color:#333;
+    padding: 20px;
+    text-align: center;
+}
+
+.shelters-list .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.shelters-list .card-text {
+    flex-grow: 1;
+    color:#333;
+}
+
+.shelters-list .btn-primary {
+    background-color: #ff7043;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+    .shelters-list .btn-primary:hover {
+        background-color: #ff5722;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+footer .p{
+    text-align: center;
+    padding: 15px;
+    background-color: #FFC0CB;
+    color: #000;
+}
+

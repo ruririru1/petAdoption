@@ -1,0 +1,40 @@
+﻿.post-ad h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.ad-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+    .ad-form label {
+        font-weight: bold;
+    }
+
+    .ad-form input,
+    .ad-form textarea,
+    .ad-form select {
+        border-radius: 10px;
+    }
+
+        .ad-form input:focus,
+        .ad-form textarea:focus,
+        .ad-form select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+        }
+
+.btn-primary {
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #FFC0CB;
+    color: #000;
+}
